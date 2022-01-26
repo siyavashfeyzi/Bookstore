@@ -12,7 +12,7 @@ namespace Bookstore.Models
         [Key]
         public int Id { get; set; }
 
-        [Display(Name = "Category Name")]
+        [Display(Name = "نام دسته بندی")]
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
