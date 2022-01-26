@@ -33,9 +33,9 @@ function loadDataTable() {
 
 function Delete(url) {
     swal({
-        title: "Are you sure you want to Delete?",
-        text: "You will not be able to restore the data!",
-        icon: "warning",
+        title: "آیا مطمئنید که میخواهید حذف کنید؟",
+        text: "شما نمی توانید داده ها را بازیابی کنید",
+        icon: "هشدار",
         buttons: true,
         dangerMode: true
     }).then((willDelete) => {
