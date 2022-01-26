@@ -74,6 +74,24 @@ namespace Bookstore.Areas.Admin.Controllers
             return Json(new { data = allObj });
         }
 
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var objFromDb = _unitOfWork.Category.Get(id);
+            if (objFromDb == null)
+            {
+                TempData["Error"] = "خطا در حذف دسته";
+                return Json(new { success = false, message = "خطای حذف" });
+            }
+
+            _unitOfWork.Category.Remove(objFromDb);
+            _unitOfWork.Save();
+
+            TempData["Success"] = "دسته با موفقیت حذف شد";
+            return Json(new { success = true, message = "حذف با موفقیت انجام شد" });
+
+        }
+
         /*
            [HttpGet]
         public async Task<IActionResult> GetAll()
