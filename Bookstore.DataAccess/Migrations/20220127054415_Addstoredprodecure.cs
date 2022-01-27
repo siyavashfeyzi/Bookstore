@@ -2,7 +2,7 @@
 
 namespace Bookstore.DataAccess.Migrations
 {
-    public partial class AddStoredProcForCoverType : Migration
+    public partial class Addstoredprodecure : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
