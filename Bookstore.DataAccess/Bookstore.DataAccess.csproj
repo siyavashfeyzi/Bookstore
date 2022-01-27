@@ -18,6 +18,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Stripe.net" Version="39.89.0" />
+    <PackageReference Include="Twilio" Version="5.70.1" />
   </ItemGroup>
 
   <ItemGroup>

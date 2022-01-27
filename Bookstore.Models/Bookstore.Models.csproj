@@ -15,6 +15,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="5.0.13" />
+    <PackageReference Include="Stripe.net" Version="39.89.0" />
+    <PackageReference Include="Twilio" Version="5.70.1" />
   </ItemGroup>
 
 </Project>
